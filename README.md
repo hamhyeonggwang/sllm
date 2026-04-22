@@ -44,21 +44,14 @@ git push -u origin main
 1. [vercel.com](https://vercel.com) 로그인
 2. **Add New Project** → GitHub 저장소 선택
 3. Framework Preset: **Other**
-4. Root Directory: `.` (기본값, 변경 안 함)
-5. Output Directory: `public` ← **반드시 입력**
-6. Build Command: 비워두기
-7. **Environment Variables** 추가:
+4. Output Directory: `public`
+5. **Environment Variables** 추가:
 
 | 변수명 | 값 |
 |--------|-----|
 | `GAS_WEBHOOK_URL` | Google Apps Script 배포 URL |
 
-8. **Deploy** 클릭
-
-> ⚠️ **주의**: Vercel 설정에서 `outputDirectory`를 `public`으로 지정하면  
-> `public/index.html` → `/` 로 자동 서빙되고  
-> `api/log.js` → `/api/log` 로 자동 라우팅됩니다.  
-> `vercel.json`에 별도 routes 설정이 **필요 없습니다**.
+6. **Deploy** 클릭
 
 ### Step 3 — Google Apps Script 설정
 
